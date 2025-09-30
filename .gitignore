@@ -1,0 +1,34 @@
+# Data
+Data/
+*.zip
+
+# Models
+*.ckpt
+*.pt
+*.pth
+
+# Plots
+results/
+figures/
+*.png
+*.svg
+
+# Log e tensorboard
+lightning_logs/
+logs/
+runs/
+
+# Temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
