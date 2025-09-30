@@ -8,8 +8,10 @@ from dataset import unzip_data, get_dataset
 from model_lightning import MedisLightningModel
 from pytorch_lightning import Trainer
 from pytorch_lightning.loggers import CSVLogger
+from visualize_results import generate_all_plots
 
-def run_kfold(dataset, k_folds=5, batch_size=16, max_epochs=5):
+
+def run_kfold(dataset, k_folds=5, batch_size=16, max_epochs=15):
     # Extraction of labels for stratification
     targets = [label for _, label in dataset.samples]
     skf = StratifiedKFold(n_splits=k_folds, shuffle=True, random_state=42)
@@ -65,6 +67,17 @@ def run_kfold(dataset, k_folds=5, batch_size=16, max_epochs=5):
     print("Confusion Matrix:")
     print(cm)
 
+    # Plots
+    print("\n" + "="*60)
+    print("Generating visualizations and reports...")
+    print("="*60)
+    generate_all_plots(
+        fold_results=fold_results,
+        class_names=dataset.classes,
+        log_dir="logs",
+        save_dir="plots"
+    )
+
     return fold_results
 
 
@@ -72,4 +85,4 @@ if __name__ == "__main__":
     unzip_data("Data.zip", "Data")
     dataset = get_dataset("Data", train=True)
 
-    run_kfold(dataset, k_folds=5, batch_size=16, max_epochs=5)
+    run_kfold(dataset, k_folds=5, batch_size=16, max_epochs=15)
