@@ -33,7 +33,8 @@ Lung → Precision 0.93, Recall 0.89, F1 = 0.91
 
 Example Outputs:
 <img width="4470" height="1466" alt="average_metrics" src="https://github.com/user-attachments/assets/785844b5-03f8-4436-be50-e872f3c87584" />
-
-
+<img width="3570" height="1770" alt="per_class_metrics" src="https://github.com/user-attachments/assets/0246fc32-43c3-4ac8-95a6-7b8d6bbaaba2" />
+<img width="2826" height="2370" alt="confusion_matrix" src="https://github.com/user-attachments/assets/17a0e5cb-697a-4afd-8974-3948d9ca98e0" />
+<img width="2385" height="1112" alt="classification_report" src="https://github.com/user-attachments/assets/196088ae-22ff-40e7-87ed-ac78fd762082" />
 
 In addition to the main PyTorch Lightning implementation, the repository also includes the files model.py and train_eval.py. These were developed as an alternative exercise, first by adapting a ResNet-based model and then by implementing a simple Convolutional Neural Network (CNN) without using PyTorch Lightning. Their purpose was mainly educational, to explore different approaches and gain a better understanding of model design and basic evaluation metrics.
