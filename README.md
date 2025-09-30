@@ -32,7 +32,8 @@ Liver → Precision 0.97, Recall 0.99, F1 = 0.98
 Lung → Precision 0.93, Recall 0.89, F1 = 0.91
 
 Example Outputs:
-![average_metrics](plots/average_metrics.png)
+<img width="4470" height="1466" alt="average_metrics" src="https://github.com/user-attachments/assets/785844b5-03f8-4436-be50-e872f3c87584" />
+
 
 
 In addition to the main PyTorch Lightning implementation, the repository also includes the files model.py and train_eval.py. These were developed as an alternative exercise, first by adapting a ResNet-based model and then by implementing a simple Convolutional Neural Network (CNN) without using PyTorch Lightning. Their purpose was mainly educational, to explore different approaches and gain a better understanding of model design and basic evaluation metrics.
