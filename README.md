@@ -3,8 +3,8 @@ In this project we developed a classification model based on DenseNet121 (implem
 To reproduce the results, please follow this setup:
 
 1. Clone the repository:
-   git clone https:[//github.com/username/repo-name.git](https://github.com/pavlomaratheas/Medis-Image-Classification
-   cd repo-name
+   git clone https://github.com/pavlomaratheas/Medis-Image-Classification.git
+   cd Medis-Image-Classification
    
 2. Create and activate a virtual environment (Python 3.10+):
    python -m venv .venv
